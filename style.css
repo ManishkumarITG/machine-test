@@ -358,10 +358,10 @@ hobbieBox>p {
 }
 /* footer */
 .footerUpper {
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 0 30px;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 60px;
 }
 
@@ -389,4 +389,8 @@ hobbieBox>p {
     justify-content: space-between;
     height: 88px;
     align-items: center;
+    text-align: center;
+}
+footer{
+    gap: 50px;
 }

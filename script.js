@@ -1,36 +1,42 @@
 let inputs = document.querySelectorAll('input');
 let submissionBTN = document.querySelector('form');
 function firstName() {
-    if (inputs[0].value) {
+    if (inputs[0].value.length > 3 ) {
         return true
-    } return false;
+    } alert("Plaese Inter a Valid Name")
+     return false;
 }
 function lastName(params) {
-    if (inputs[1].value) {
+    if (inputs[1].value.length > 3) {
         return true
-    } return false;
+    } alert("Inter a valid last name") 
+    return false;
 }
 function email() {
-    if (inputs[2].value) {
+    if (inputs[2].value.length > 4) {
         return true
-    } return false;
+    }alert("Email is requerd")
+     return false;
 }
 function number() {
     if (inputs[3].value.length == 10) {
         return true
-    } return false;
+    }alert("inter a valid number") 
+    return false;
 }
 
 
 function dob() {
     if (inputs[4].value) {
         return true
-    } return false;
+    }alert("dob is require")
+     return false;
 }
 function gender() {
     if (inputs[5].checked || inputs[6].checked || inputs[7].checked) {
         return true
-    } return false;
+    }alert("plz choose a gender") 
+    return false;
 }
 let arr = []
 function hobbei() {
@@ -41,27 +47,35 @@ function hobbei() {
         if (inputs[11].checked) { arr.push('riding bike') }
         if (inputs[12].checked) { arr.push('other') }
         return true
-    } return false;
+    }alert("choose an hobbie atlist") 
+    return false;
 }
 function message() {
-    if ((document.querySelector('textarea').value)) {
+    if ((document.querySelector('textarea').value.length >5)) {
         return true;
-    } return false;
+    } alert("masssge is require")
+     return false;
 }
 function checkOne() {
     if (inputs[13].checked) {
         return true
-    } return false;
+    }alert("subscription is must") 
+    return false;
 }
 function checkTwo() {
+
     if (inputs[14].checked) {
         return true
-    } return false;
+    }alert("plz tick on term and conditions")
+     return false;
 }
 function checkThree() {
+
     if (inputs[15].checked) {
         return true
-    } return false;
+    }
+    alert("accept promotional offers") 
+    return false;
 }
 submissionBTN.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -81,6 +95,6 @@ submissionBTN.addEventListener('submit', (e) => {
         }
         console.log('Hobbies', arr)
         console.log('message', document.querySelector('textarea').value)
-        // location.reload()
-    } else { alert('Something got wrong') }
+        arr =[]
+    }
 })

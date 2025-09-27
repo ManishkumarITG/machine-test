@@ -23,8 +23,6 @@
         display: none;
     }
 
-
-
     #fName,
     #lName,
     #email,
@@ -32,11 +30,6 @@
     #dob {
         width: 299px;
         box-sizing: border-box;
-    }
-
-    .gender {
-        /* flex-direction: column; */
-        /* padding: 0; */
     }
 
     .hobbie,
@@ -47,7 +40,7 @@
 
     .information {
         max-width: 300px;
-        padding: 40px 1 0px;
+        padding: 40px 10px;
     }
     #messanger{
         width: 300px;
@@ -55,7 +48,14 @@
     .formBox{
         align-items: center;
     }
-    
+    .footerBotton{
+        flex-direction: column;
+        padding: 10px;
+    }    
+    .footerUpper{
+        padding: 0 10px;
+    }
+
 }
 
 @media (max-width: 1250px) {
