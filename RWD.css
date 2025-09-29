@@ -31,31 +31,37 @@
         width: 400px;
         box-sizing: border-box;
     }
+
     .information {
         max-width: 600px;
         padding: 40px 40px;
         box-sizing: border-box;
     }
+
     .hobbie,
     .DOBandNumber,
     .formNameDiv {
         display: block;
     }
 
-    #messanger{
+    #messanger {
         width: 500px;
     }
-    .formBox{
+
+    .formBox {
         align-items: center;
     }
-    .footerBotton{
+
+    .footerBotton {
         flex-direction: column;
         padding: 10px;
-    }    
-    .footerUpper{
+    }
+
+    .footerUpper {
         padding: 0 10px;
     }
-    .footerUpperChildDivsItems{
+
+    .footerUpperChildDivsItems {
         width: 303px;
     }
 }
@@ -66,18 +72,24 @@
     }
 }
 
-@media (max-width: 750px) {    
+@media (max-width: 750px) {
     .information {
         max-width: 300px;
         padding: 40px 20px;
         box-sizing: content-box;
     }
-    .formBox{
+
+    .formBox {
         align-items: center;
     }
-    #messanger{
+
+    #messanger {
         width: 300px;
     }
+    .promotionPadBigText{
+        font-size: 50px;
+    }
+
     #fName,
     #lName,
     #email,
@@ -87,3 +99,12 @@
         box-sizing: border-box;
     }
 }
+
+@media (max-width : 360px) {
+    .container{
+        padding: 0;
+    }
+    .information{
+        max-width: 100% ;
+    }
+    }
