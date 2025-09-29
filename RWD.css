@@ -40,7 +40,7 @@
 
     .information {
         max-width: 300px;
-        padding: 40px 10px;
+        padding: 40px 20px;
     }
     #messanger{
         width: 300px;
@@ -55,7 +55,9 @@
     .footerUpper{
         padding: 0 10px;
     }
-
+    .footerUpperChildDivsItems{
+        width: 303px;
+    }
 }
 
 @media (max-width: 1250px) {

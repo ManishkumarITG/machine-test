@@ -114,8 +114,8 @@ function checkThree() {
 }
 submissionBTN.addEventListener('submit', (e) => {
     e.preventDefault()
-    if (firstName() && lastName() && gender() && hobbei() && email() &&
-        message() && dob() && checkOne() && checkTwo() && checkThree() && number()) {
+    if (firstName() && lastName() && gender()  && email() &&
+        message() && dob() && checkOne() && checkTwo() && checkThree() && number() && hobbei()) {
         console.log('First Name', inputs[0].value)
         console.log('Second Name', inputs[1].value)
         console.log('email', inputs[2].value)

@@ -19,7 +19,6 @@
     max-width: 1600px;
     padding: 0 30px;
     background: rgba(247, 246, 242, 1);
-    /* align-items: center; */
     padding-bottom: 100PX;
     box-sizing: border-box;
 }
@@ -306,7 +305,7 @@ form {
 }
 
 .genderBox>p,
-hobbieBox>p {
+.hobbieBox>p {
     font-size: 18px;
 }
 
@@ -323,6 +322,8 @@ hobbieBox>p {
     height: 80;
     border: none;
     outline: none;
+    padding: 14px;
+    resize: none;
 }
 
 .genderBox,
@@ -363,9 +364,8 @@ hobbieBox>p {
 /* footer */
 .footerUpper {
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 76px;
     flex-wrap: wrap;
-    /* justify-content: center; */
     gap: 60px;
 }
 
@@ -397,4 +397,8 @@ hobbieBox>p {
 }
 footer{
     gap: 50px;
+}
+.primaryBTN:hover{
+    background: linear-gradient(45deg, rgba(140,70,76,1), rgb(190, 115, 124));
+    font-weight: 700;
 }
