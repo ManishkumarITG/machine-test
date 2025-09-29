@@ -1,3 +1,0 @@
-function findWithoutSort(arr) {
-    
-}
