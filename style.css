@@ -49,7 +49,9 @@ form p:not([class]) {
     background: rgba(35, 18, 19, 1);
     color: white;
 }
-
+.secondaryBTN:hover{
+    background:linear-gradient(45deg, rgba(35, 18, 19, 1), rgba(90, 40, 45, 1));
+}
 .flexCol {
     display: flex;
     flex-direction: column;
@@ -335,9 +337,9 @@ form {
     height: 43px;
 }
 
-input[type="date"]::-webkit-datetime-edit {
+/* input[type="date"]::-webkit-datetime-edit {
     color: transparent; 
-}
+} */
 .gender {
     gap: 20px;
 }
@@ -403,7 +405,7 @@ input[type="date"]::-webkit-datetime-edit {
 /* footer */
 .footerUpper {
     justify-content: space-between;
-    padding: 0 76px;
+    padding: 0 119px;
     flex-wrap: wrap;
     gap: 60px;
 }
