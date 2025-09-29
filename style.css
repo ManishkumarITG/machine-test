@@ -57,12 +57,14 @@ form p:not([class]) {
 
 
 /* Header  */
+header{
+    padding: 30px;
+}
 nav {
     justify-content: center;
     align-items: center;
     padding: 10px;
     height: 41px;
-    max-width: 1600px;
     text-align: center;
     border-bottom: 1px solid rgb(221, 235, 232);
 }
@@ -111,13 +113,13 @@ h1 {
     text-align: right;
     font-weight: 700;
     transform: scale(0.95);
-    /* smooth animation */
-    
-    pointer-events: none;
+    opacity: 0;
 }
 
 .active {
     display: inline-block;
+    opacity: 1;
+    transition: 3s;
 }
 li {
     list-style: none;
@@ -288,6 +290,8 @@ li {
 .container {
     padding: 10px;
 }
+/* Marquee Tag */
+
 
 /* INFORMATION BARR */
 .information {
