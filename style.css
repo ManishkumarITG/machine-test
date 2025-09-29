@@ -7,6 +7,9 @@
     text-decoration: none;
     color: black;
 }
+.textCenter{
+    text-align: center;
+}
 
 .container {
     display: flex;
@@ -38,8 +41,6 @@
 }
 
 .secondaryBTN {
-    /* width: 47;
-    height: 28; */
     padding: 10px;
     background: rgba(35, 18, 19, 1);
     color: white;
@@ -105,7 +106,7 @@ h1 {
     font-weight: 700;
     font-size: 66.73px;
     text-transform: uppercase;
-
+    
 }
 
 
