@@ -24,6 +24,9 @@
     box-sizing: border-box;
 }
 
+form p:not([class]){
+    display: none;
+}
 /* Some All Rounder classes */
 .flex {
     display: flex;
