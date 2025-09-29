@@ -93,7 +93,6 @@ function checkOne() {
     return false;
 }
 function checkTwo() {
-
     if (inputs[14].checked) {
         p[9].style.display = 'none'
         return true
@@ -133,3 +132,9 @@ submissionBTN.addEventListener('submit', (e) => {
         arr = []
     }
 })
+
+let dropDownOnhumburger = document.querySelector(".dropDownOnhumburger")
+function droperDown (){
+   dropDownOnhumburger.classList.toggle('active');
+   console.log(dropDownOnhumburger);  
+}

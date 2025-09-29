@@ -7,7 +7,8 @@
     text-decoration: none;
     color: black;
 }
-.textCenter{
+
+.textCenter {
     text-align: center;
 }
 
@@ -23,9 +24,10 @@
     box-sizing: border-box;
 }
 
-form p:not([class]){
+form p:not([class]) {
     display: none;
 }
+
 /* Some All Rounder classes */
 .flex {
     display: flex;
@@ -96,6 +98,34 @@ h1 {
     text-transform: uppercase;
 }
 
+.dropDownOnhumburger {
+    padding: 10px;
+    width: 112px;
+    border-radius: 10px;
+    background: #c1dbdd;
+    color: black;
+    display: none;
+    position: absolute;
+    top: 110px;
+    right: 10%;
+    text-align: right;
+    font-weight: 700;
+    transform: scale(0.95);
+    /* smooth animation */
+    
+    pointer-events: none;
+}
+
+.active {
+    display: inline-block;
+}
+li {
+    list-style: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
 /* promotion Pad CSS (just after header) */
 .promotionPad {
     justify-content: center;
@@ -108,7 +138,7 @@ h1 {
     font-weight: 700;
     font-size: 66.73px;
     text-transform: uppercase;
-    
+
 }
 
 
@@ -254,7 +284,8 @@ h1 {
     color: transparent;
     -webkit-text-stroke: 1px black;
 }
-.container{
+
+.container {
     padding: 10px;
 }
 
@@ -300,6 +331,9 @@ form {
     height: 43px;
 }
 
+input[type="date"]::-webkit-datetime-edit {
+    color: transparent; 
+}
 .gender {
     gap: 20px;
 }
@@ -361,6 +395,7 @@ form {
     flex-wrap: wrap;
     gap: 60px;
 }
+
 /* footer */
 .footerUpper {
     justify-content: space-between;
@@ -395,10 +430,12 @@ form {
     align-items: center;
     text-align: center;
 }
-footer{
+
+footer {
     gap: 50px;
 }
-.primaryBTN:hover{
-    background: linear-gradient(45deg, rgba(140,70,76,1), rgb(190, 115, 124));
+
+.primaryBTN:hover {
+    background: linear-gradient(45deg, rgba(140, 70, 76, 1), rgb(190, 115, 124));
     font-weight: 700;
 }

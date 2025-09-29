@@ -28,22 +28,22 @@
     #email,
     #phone,
     #dob {
-        width: 299px;
+        width: 400px;
         box-sizing: border-box;
     }
-
+    .information {
+        max-width: 600px;
+        padding: 40px 40px;
+        box-sizing: border-box;
+    }
     .hobbie,
     .DOBandNumber,
     .formNameDiv {
         display: block;
     }
 
-    .information {
-        max-width: 300px;
-        padding: 40px 20px;
-    }
     #messanger{
-        width: 300px;
+        width: 500px;
     }
     .formBox{
         align-items: center;
@@ -63,5 +63,27 @@
 @media (max-width: 1250px) {
     .bigBorder {
         width: 850px;
+    }
+}
+
+@media (max-width: 750px) {    
+    .information {
+        max-width: 300px;
+        padding: 40px 20px;
+        box-sizing: content-box;
+    }
+    .formBox{
+        align-items: center;
+    }
+    #messanger{
+        width: 300px;
+    }
+    #fName,
+    #lName,
+    #email,
+    #phone,
+    #dob {
+        width: 299px;
+        box-sizing: border-box;
     }
 }
