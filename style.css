@@ -124,7 +124,7 @@ h1 {
 /* hero section */
 .heroSection {
     height: 550px;
-    background: url('/Assets/girlImageForHeroSection.png');
+    background: url('./Assets/girlImageForHeroSection.png');
     background-size: cover;
     background-position: center;
     aspect-ratio: 2.8/1;
