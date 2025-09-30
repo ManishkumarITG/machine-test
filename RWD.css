@@ -102,12 +102,15 @@
 }
 
 @media (max-width : 360px) {
-    .container {
+    .container{
         padding: 0;
     }
 
     .information {
         max-width: 100vw;
         display: inline-block;
+    }
+    #messanger {
+        width: 263px;
     }
 }
