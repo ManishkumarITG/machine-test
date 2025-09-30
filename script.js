@@ -134,9 +134,9 @@ submissionBTN.addEventListener('submit', (e) => {
             i.checked = false
             document.querySelector('textarea').value = ""
         }
-        arr = []
-        dataArr=[]
     }
+    arr = []
+    dataArr=[]
 })
 
 let dropDownOnhumburger = document.querySelector(".dropDownOnhumburger")
