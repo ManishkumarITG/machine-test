@@ -105,15 +105,11 @@ h1 {
 
 .dropDownOnhumburger {  /*MENU BAR (ONLY SHOW WHEN SCREEN SIZE LOW) */
     padding: 10px;
-    width: 112px;
-    border-radius: 10px;
-    background: #c1dbdd;
-    color: black;
+    width: 100%;
+    background: #fff;
+    color: rgb(255, 255, 255);
     display: none;
-    position: absolute;
-    top: 110px;
-    right: 10%;
-    text-align: right;
+    text-align: center;
     font-weight: 700;
 }
 
@@ -128,6 +124,11 @@ li {
     margin: 10px 0 0 0;
 }
 
+ul{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* promotion Pad CSS (just after header) */
 .promotionPad {
     justify-content: center;
