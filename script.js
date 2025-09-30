@@ -10,7 +10,7 @@ function firstName() {
     }else{
     p[0].style.display = 'block'
     p[0].style.color = "red"
-    return false;}
+      dataArr.push(true);}
 }
 
 function lastName(params) {
@@ -21,18 +21,17 @@ function lastName(params) {
     }else{
     p[1].style.display = 'block'
     p[1].style.color = "red"
-    return false;}
+      dataArr.push(true);}
 }
 function email() {
     if (inputs[2].value.length > 4) {
         p[2].style.display = 'none'
         dataArr.push(true)
-      
     }else{
     p[2].style.display = 'block'
     p[2].style.color = "red"
     dataArr.push(true)
-    return false;}
+      dataArr.push(true);}
 }
 function number() {
     if (inputs[3].value.length == 10) {
@@ -41,7 +40,7 @@ function number() {
     }else{
     p[3].style.display = 'block'
     p[3].style.color = "red"
-    return false;}
+      dataArr.push(true);}
 }
 
 
@@ -52,7 +51,7 @@ function dob() {
     }else{
     p[4].style.display = 'block'
     p[4].style.color = "red"
-    return false;}
+      dataArr.push(true);}
 }
 function gender() {
     if (inputs[5].checked || inputs[6].checked || inputs[7].checked) {
@@ -61,7 +60,7 @@ function gender() {
     }else{
     p[5].style.display = 'block'
     p[5].style.color = "red"
-    return false;}
+      dataArr.push(true);}
 }
 let arr = []
 function hobbei() {
@@ -75,8 +74,7 @@ function hobbei() {
         dataArr.push(true)
     }else{
     p[6].style.display = 'block'
-    p[6].style.color = "red"
-    return false;}
+    p[6].style.color = "red"}
 }
 function message() {
     if ((document.querySelector('textarea').value.length > 5)) {
@@ -84,8 +82,7 @@ function message() {
         dataArr.push(true);
     }else{
     p[7].style.display = 'block'
-    p[7].style.color = "red"
-    return false;}
+    p[7].style.color = "red"}
 }
 function checkOne() {
     if (inputs[13].checked) {
@@ -93,8 +90,7 @@ function checkOne() {
         dataArr.push(true)
     }else{
     p[8].style.display = 'block'
-    p[8].style.color = "red"
-    return false;}
+    p[8].style.color = "red"}
 }
 function checkTwo() {
     if (inputs[14].checked) {
@@ -102,8 +98,7 @@ function checkTwo() {
         dataArr.push(true)
     }else{
     p[9].style.display = 'block'
-    p[9].style.color = "red"
-    return false;}
+    p[9].style.color = "red"}
 }
 function checkThree() {
     if (inputs[15].checked) {
@@ -111,8 +106,7 @@ function checkThree() {
         dataArr.push(true)
     }else{
     p[10].style.display = 'block'
-    p[10].style.color = "red"
-    return false;}
+    p[10].style.color = "red"}
 }
 submissionBTN.addEventListener('submit', (e) => {
     console.log(dataArr.length)
