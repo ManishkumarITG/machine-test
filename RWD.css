@@ -86,7 +86,8 @@
     #messanger {
         width: 300px;
     }
-    .promotionPadBigText{
+
+    .promotionPadBigText {
         font-size: 50px;
     }
 
@@ -101,10 +102,12 @@
 }
 
 @media (max-width : 360px) {
-    .container{
+    .container {
         padding: 0;
     }
-    .information{
-        max-width: 100% ;
+
+    .information {
+        max-width: 100vw;
+        display: inline-block;
     }
-    }
+}
