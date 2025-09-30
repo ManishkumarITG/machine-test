@@ -12,7 +12,6 @@ function firstName() {
     p[0].style.color = "red"
     return false;}
 }
-console.log(p[0].innerHTML);
 
 function lastName(params) {
     if (inputs[1].value.length > 3) {
@@ -135,13 +134,18 @@ submissionBTN.addEventListener('submit', (e) => {
         console.log('Hobbies', arr)
         console.log('message', document.querySelector('textarea').value)
         dataArr=[]
+        let formInput = Array.from(document.querySelectorAll('form input'))
+        for (let i of formInput) {
+            i.value= ""
+            i.checked = false
+            document.querySelector('textarea').value = ""
+        }
+        arr = []
+        dataArr=[]
     }
-    arr = []
-    dataArr=[]
 })
 
 let dropDownOnhumburger = document.querySelector(".dropDownOnhumburger")
 function droperDown() {
     dropDownOnhumburger.classList.toggle('active');
-    console.log(dropDownOnhumburger);
 }
