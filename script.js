@@ -5,7 +5,7 @@ let dataArr = [];
 function firstName() {
     if (inputs[0].value.length > 3) {
         p[0].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('fname')
 
     } else {
         p[0].style.display = 'block'
@@ -16,7 +16,7 @@ function firstName() {
 function lastName(params) {
     if (inputs[1].value.length > 3) {
         p[1].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('lname')
 
     } else {
         p[1].style.display = 'block'
@@ -26,7 +26,7 @@ function lastName(params) {
 function email() {
     if (inputs[2].value.length > 4) {
         p[2].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('mail')
     } else {
         p[2].style.display = 'block'
         p[2].style.color = "red"
@@ -35,7 +35,7 @@ function email() {
 function number() {
     if (inputs[3].value.length == 10) {
         p[3].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('phone')
     } else {
         p[3].style.display = 'block'
         p[3].style.color = "red"
@@ -46,7 +46,7 @@ function number() {
 function dob() {
     if (inputs[4].value) {
         p[4].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('dob')
     } else {
         p[4].style.display = 'block'
         p[4].style.color = "red"
@@ -55,7 +55,7 @@ function dob() {
 function gender() {
     if (inputs[5].checked || inputs[6].checked || inputs[7].checked) {
         p[5].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('gender')
     } else {
         p[5].style.display = 'block'
         p[5].style.color = "red"
@@ -70,7 +70,7 @@ function hobbei() {
         if (inputs[11].checked) { arr.push('riding bike') }
         if (inputs[12].checked) { arr.push('other') }
         p[6].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push("hobe")
     } else {
         p[6].style.display = 'block'
         p[6].style.color = "red"
@@ -79,7 +79,7 @@ function hobbei() {
 function message() {
     if ((document.querySelector('textarea').value.length > 5)) {
         p[7].style.display = 'none'
-        dataArr.push(true);
+        dataArr.push('msg');
     } else {
         p[7].style.display = 'block'
         p[7].style.color = "red"
@@ -88,7 +88,7 @@ function message() {
 function checkOne() {
     if (inputs[13].checked) {
         p[8].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('one')
     } else {
         p[8].style.display = 'block'
         p[8].style.color = "red"
@@ -97,7 +97,7 @@ function checkOne() {
 function checkTwo() {
     if (inputs[14].checked) {
         p[9].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('two')
     } else {
         p[9].style.display = 'block'
         p[9].style.color = "red"
@@ -106,14 +106,14 @@ function checkTwo() {
 function checkThree() {
     if (inputs[15].checked) {
         p[10].style.display = 'none'
-        dataArr.push(true)
+        dataArr.push('three')
     } else {
         p[10].style.display = 'block'
         p[10].style.color = "red"
     }
 }
 submissionBTN.addEventListener('submit', (e) => {
-    console.log(dataArr.length)
+    console.log(dataArr)
     firstName(), lastName(), gender(), email(), message(), dob(), checkOne(), checkTwo(), checkThree(), number(), hobbei()
     e.preventDefault()
     if (dataArr.length == 11) {
